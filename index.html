@@ -35,6 +35,11 @@
       media="screen"
       href="vendor/lightgallery.js/dist/css/lightgallery.min.css"
     />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
 
     <!-- Main Theme Styles + Bootstrap-->
     <link rel="stylesheet" media="screen" href="css/theme.min.css" />
@@ -145,6 +150,22 @@
       .icon-container img {
         width: 50px;
         height: auto;
+      }
+
+      .bonus-card {
+        background: white;
+        color: black;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+      }
+      .bonus-card:hover {
+        transform: scale(1.05);
+      }
+      .bonus-icon {
+        font-size: 40px;
+        color: #0072ff;
       }
     </style>
   </head>
@@ -605,6 +626,47 @@
               </tr>
             </tbody>
           </table>
+        </div>
+      </section>
+
+      <!-- Skema Bonus Agent Mobil 1 -->
+
+      <section class="container text-center my-5">
+        <h2 class="fw-bold text-white">SKEMA BONUS AGENT MOBIL</h2>
+        <div class="row mt-4">
+          <!-- Bonus Promosi -->
+          <div class="col-md-4">
+            <div class="bonus-card p-4">
+              <i class="fas fa-chart-line bonus-icon"></i>
+              <h4 class="mt-3">Bonus Promosi</h4>
+              <p>
+                Bonus untuk setiap unit kendaraan konsumen yang direferensikan
+                oleh Agent hingga funding secara real-time.
+              </p>
+            </div>
+          </div>
+          <!-- Bonus Progresif -->
+          <div class="col-md-4">
+            <div class="bonus-card p-4">
+              <i class="fas fa-hand-holding-usd bonus-icon"></i>
+              <h4 class="mt-3">Bonus Progresif</h4>
+              <p>
+                Akumulasi bonus atas setiap unit kendaraan konsumen yang
+                direferensikan selama satu bulan.
+              </p>
+            </div>
+          </div>
+          <!-- Bonus Kuartal -->
+          <div class="col-md-4">
+            <div class="bonus-card p-4">
+              <i class="fas fa-calendar-alt bonus-icon"></i>
+              <h4 class="mt-3">Bonus Kuartal</h4>
+              <p>
+                Akumulasi bonus untuk kendaraan konsumen yang direferensikan
+                dalam tiga bulan. Dibayarkan setiap kuartal.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
